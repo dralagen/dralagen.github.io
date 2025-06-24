@@ -3,6 +3,8 @@ on:
   repository_dispatch:
     types:
       - update-submodule
+  workflow_dispatch:
+
 jobs:
   update-submodule:
     runs-on: ubuntu-latest
