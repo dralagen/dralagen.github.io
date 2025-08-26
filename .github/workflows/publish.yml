@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         name: checkout 🛎️
         with:
           token: ${{ secrets.PAT }}
@@ -31,7 +31,7 @@ jobs:
           ANALYTICS_WEBSITE_ID: ${{ vars.ANALYTICS_WEBSITE_ID }}
           ANALYTICS_HOST: ${{ vars.ANALYTICS_HOST }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
   deploy:
