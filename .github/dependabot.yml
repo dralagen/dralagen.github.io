@@ -9,6 +9,9 @@ updates:
         applies-to: "version-updates"
         patterns:
           - "*"
+    cooldown:
+      default: 3
+      semver-major: 7
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -18,3 +21,6 @@ updates:
         applies-to: "version-updates"
         patterns:
           - "*"
+    cooldown:
+      default: 3
+      semver-major: 7
