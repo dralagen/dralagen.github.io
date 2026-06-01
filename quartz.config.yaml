@@ -112,6 +112,7 @@ plugins:
       rssLimit: 20
       rssFullHtml: true
       rssSlug: rss
+      includeEmptyFiles: false
   - source: github:quartz-community/favicon
     enabled: true
   - source: github:quartz-community/og-image
