@@ -7,7 +7,7 @@ import type { Analytics } from "./quartz/cfg"
 registerCondition("only-index", (props) => props.fileData.slug === "index")
 
 // Filter recent-notes to pages tagged "article"
-componentRegistry.setOptionOverrides("recent-notes", {
+componentRegistry.setOptionOverrides("@quartz-community/recent-notes", {
   filter: (page: { frontmatter?: { tags?: string[] } }) =>
     page.frontmatter?.tags?.includes("article") === true,
 })
